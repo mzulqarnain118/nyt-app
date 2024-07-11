@@ -1,7 +1,8 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "./App";
-
-jest.mock("./services/api"); // Mock the API calls
+import React from "react";
+import api from "./services/api";
+jest.mock("./services/api");
 
 const mockArticles = [
   {

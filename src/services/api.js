@@ -1,6 +1,7 @@
 import axios from "axios";
+import { config } from "../config";
 
-const API_KEY = import.meta.env.VITE_NYT_API_KEY;
+const { API_KEY } = config;
 
 const fetchMostPopularArticles = async (period = 1) => {
   try {
